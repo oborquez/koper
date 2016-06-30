@@ -1,0 +1,94 @@
+@font-face {
+    font-family: kelson;
+    src: url("Kelson Sans Regular.otf");
+}
+body{
+  font-family: "kelson", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.first-header{
+  background: #333;
+  padding: 15px;
+  border-bottom: 6px solid #ff6d0e;
+  text-align: center;
+  font-size: 1.3em;
+}
+span.wcolor{
+  color:#ebebeb;
+}
+span.ocolor{
+  color: #ff6d0e;
+}
+
+.main-menu{
+  position: relative;
+  background: #1595c4;
+  text-align: right;
+}
+.main-menu img{
+  display: block;
+  position: absolute;
+  left: 50px;
+  top: -52px;
+}
+.main-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+
+.main-menu ul a li{
+  display: inline-block;
+  color:#ebebeb;
+  font-size: 1em;
+  padding:0px 10px;
+}
+.main-menu ul a li:hover{
+  color: #ff6d0e;
+}
+
+.menu2{
+  padding-top:30px;
+}
+.menu2 .columns{
+  background: #eee;
+  text-align: center;
+}
+.menu2 img{
+  margin:10px;
+}
+.menu2 span{
+  display: block;
+  background: #1595c4;
+  font-size: 0.9em;
+  color:#eee;
+  padding:3px;
+  text-align: center;
+  line-height: 14px;
+}
+
+.section{
+  margin-top: 30px;
+}
+
+.section h2{
+  text-align: center;
+  font-size:3em;
+}
+
+.section h3{
+  font-size:1.3em;
+}
+
+#nosotros{
+  border: 1px solid #78bb1e;
+  padding: 20px;
+}
+
+#nosotros h2{ color: #78bb1e; }
+
+#nosotros h3{ color: #1595c4; }
+
+#nosotros ul{ list-style: none;}
+
+#nosotros li:first-letter{ color: #1595c4; }
