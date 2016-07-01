@@ -22,7 +22,10 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/mq.css">
 
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -35,41 +38,70 @@
   <div class="first-header">
       <span class="wcolor">Soluciones integrales al sector</span> <span class="ocolor">industrial y energético</span>
   </div>
-  <nav class="main-menu">
-    <img src="images/logo.png" alt="">
+  <div class="mobile-menu">
+    <div id="triggermenu" class="mobile-bar" style="text-align:right">
+      <a  class="box-shadow-menu"></a>
+    </div>
+  </div>
+  <nav class="mobile-main-menu">
     <ul>
       <a href="#nosotros"><li>NOSOTROS</li></a>
       <a href="#servicios"><li>SERVICIOS Y PRODUCTOS</li></a>
-      <a href="#tecnologia"><li>TECNOLOGÍA</li></a>
+      <a href="#soldadura"><li>TECNOLOGÍA</li></a>
       <a href="#proyectos"><li>PROYECTOS</li></a>
-      <a href="#contacto"><li>PRODUCTOS</li></a>
+      <a href="#contacto"><li>CONTACTO</li></a>
     </ul>
   </nav>
-  <div class="slider"></div>
+  <nav class="main-menu">
+    <img src="images/logo.png" class="logoImage" alt="">
+    <ul>
+      <a href="#nosotros"><li>NOSOTROS</li></a>
+      <a href="#servicios"><li>SERVICIOS Y PRODUCTOS</li></a>
+      <a href="#soldadura"><li>TECNOLOGÍA</li></a>
+      <a href="#proyectos"><li>PROYECTOS</li></a>
+      <a href="#contacto"><li>CONTACTO</li></a>
+    </ul>
+  </nav>
+  <div class="slider">
+    <img src="images/baner.png" alt="">
+  </div>
 
   <div class="container menu2">
     <div class="row">
         <div class="two columns">
-          <img src="images/nosotros.png" alt="">
-          <span>NOSOTROS</span>
+          <a href="#nosotros">
+            <img src="images/nosotros.png" alt="">
+            <span>NOSOTROS</span>
+          </a>
         </div>
-        <div class="two columns">
-          <img src="images/servicios.png" alt="">
-          <span>SERVICIOS Y PRODYCTOS</span>
 
-        </div>
         <div class="two columns">
-          <img src="images/soldadura.png" alt="">
-          <span>SOLDADURA POR RESISTENCIA</span>
+          <a href="#servicios">
+            <img src="images/servicios.png" alt="">
+            <span>SERVICIOS Y PRODYCTOS</span>
+          </a>
         </div>
+
+
         <div class="two columns">
+          <a href="#soldadura">
+            <img src="images/soldadura.png" alt="">
+            <span>SOLDADURA POR RESISTENCIA</span>
+          </a>
+        </div>
+
+        <div class="two columns">
+          <a href="#proyectos">
           <img src="images/proyectos.png" alt="">
           <span>PROYECTOS</span>
+        </a>
         </div>
+
         <div class="two columns">
+          <a href="#contacto">
           <img src="images/contacto.png" alt="">
           <span>CONTACTO</span>
-
+          </a>
         </div>
     </div>
   </div>
@@ -104,13 +136,148 @@
     </div>
   </div>
 
+
+  <div class="section">
+    <div class="container">
+      <div class="row" id="servicios" >
+        <h2>SERVICIOS Y PRODUCTOS</h2>
+        <div class="seven columns">
+          <ul>
+            <li>Administración y ejecución de proyectos de tipo comercial, industrial y minero en el ramo eléctrico, mecánico y civil.</li>
+            <li>Obras de infraestructura tanto pública como privada.</li>
+            <li>Supervisión, asesorías y estudios de proyectos en ingeniería eléctrica, mecánica y civil.</li>
+            <li>Mantenimiento preventivo y/o correctivo industrial eléctrico, mecánico y civil</li>
+            <li>Comercialización de materiales para la construcción eléctrica, mecánica y civil.</li>
+            <li>Diseño y maquinado de piezas especiales, fabricación de anclas, carros (dollies), mesas de trabajo, racks, fixtures, guardas protectoras y barandales.</li>
+            <li>Asesoría y realización de proyectos mecatrónicos, programación de PLC`s, programación de robots y optimización.</li>
+            <li>Montajes de líneas de producción e interconexión entre sus componentes.</li>
+            <li>Fabricación y montajes de estructuras livianas.</li>
+            <li>Instalaciones eléctricas de alta, media y baja tensión.            </li>
+          </ul>
+        </div>
+        <div class="four columns">
+          <img src="images/serviciosSection.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row" id="soldadura" >
+        <h2>SOLDADURA POR RESISTENCIA <br></h2>
+        <span>(Por puntos, por costura y por proyección)</span>
+        <img src="images/soldaduraSection.png" alt="">
+        <ul>
+          <li>Fabricación de consumibles de soldadura estándar.</li>
+          <li>Fabricación de consumibles de soldadura no estándar.</li>
+          <li>Sistema de control de inventario de consumibles.</li>
+          <li>Programación y optimización de equipos de soldadura.</li>
+          <li>Instalación de equipos de soldadura.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row" id="consumibles" >
+        <h2>CONSUMIBLES DE SOLDADURA<br></h2>
+        <div class="one-third column"><img src="images/soldadura1.png"></div>
+        <div class="one-third column"><img src="images/soldadura2.png"></div>
+        <div class="one-third column"><img src="images/soldadura3.png"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row" id="proceso" >
+        <h2>PROCESO DE SOLDADURA<br></h2>
+        <div class="responsive-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Q0oIoR9mLwc" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <div class="container">
+      <div class="row" id="proyectos" >
+        <h2>PROYECTOS EJECUTADOS<br></h2>
+        <div class="four columns">
+          <img src="images/proyectosSection.png" alt="">
+        </div>
+        <div class="seven columns">
+            <h3>Sector energético plantas generadoras</h3>
+            <ul>
+              <li>Servicio de construcción de obra civil para cimentaciones de equipos, ductos y registros eléctricos, alumbrado exterior de planta, construcción de edificios de control y procesos,barrenado e instalación de anclas de 1-1/2”diam x 1.5mL para soporte de chimeneas para proyecto 264 Centro Morelos (2013-2014 ) Huexca, Morelos.            </li>
+              <li>Servicio de construcción de obra civil para la cimentación de tren de potencia unidad 1para proyecto Nuevo Pemex, Tabasco (2009-2010) Nuevo Pemex, Tabasco.</li>
+              <li>Servicio de construcción de obra civil y eléctrica para la cimentación de equipos mayores y montaje total eléctrico de equipos para proyecto CCI No.2 La Paz (2006-2008) La Paz, Baja California.</li>
+              <li>Servicio de proyecto y construcción de obra civil, fuerza y control tales como cimentaciones, trincheras para red contra incendio, vialidades en planta, alimentación de bombas de pozos de agua, instalaciones eléctricas edificios, red de computo, pruebas eléctricas para puesta en marcha, reemplazo y puesta en servicio del transformador auxiliar para el proyecto Turbogas a Ciclo Combinado 88mw (2004-2006) Hermosillo,Sonora.</li>
+            </ul>
+
+            <h3>Industria Automotriz</h3>
+            <ul>
+              <li>Servicio de construcción de obra civil, instalación eléctrica y mecánica para la implementación de líneas de nuevos modelos (2000-2010), Hermosillo, Sonora.</li>
+            </ul>
+
+            <h3>Industria Minera</h3>
+            <ul>
+              <li>Servicio de construcción de obra civil y montaje eléctrico para la ampliación de planta concentradora para las nuevas unidades de producción (2000-2002) Cananea, Sonora.              </li>
+            </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <div class="container">
+      <div class="row" id="contacto" >
+        <h2>CONTACTO</h2>
+        <h3>Área Norte</h3>
+        <p>Florentino Soto</p>
+        <p>florentinosoto@tecnokoper.com</p>
+        <p>Tel (55) 6607 1989</p>
+
+        <h3>Área Centro-Sur</h3>
+        <p>Gilberto Peralta</p>
+        <p>gilbertoperalta@tecnokoper.com</p>
+        <p>Tel (442) 556 6129</p>
+
+        <h3>Matriz</h3>
+        <p>Álvaro Soto</p>
+        <p>alvarosoto@tecnokoper.com</p>
+        <p>Tel (662) 2 542358</p>
+
+      </div>
+    </div>
+  </div>
+
+
 <footer>
-  <div class="blue-line"></div>
+  <div class="blue-line">    <img src="images/logo.png" class="logoImage"  alt=""> </div>
   <p><stron>Tecnologías Koper S.A. de C.V.</stron></p>
   <p>Templo quetzalcóatl 12 col Perisur, CP 83294</p>
   <p>Hermosillo, Sonora, México</p>
 </footer>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#triggermenu").click(function(){
+        $(".mobile-main-menu").slideToggle();
+      });
+
+      $(".mobile-main-menu a").click(function(){
+        $(".mobile-main-menu").slideToggle();
+      })
+    })
+  </script>
 </body>
 </html>

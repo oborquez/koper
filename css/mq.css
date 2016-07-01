@@ -1,0 +1,30 @@
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .first-header, .main-menu, .menu2, #servicios img, #proyectos img{display: none;}
+  .mobile-menu{ display: block;}
+
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px ) {
+  .first-header, .main-menu, .menu2, #servicios img, #proyectos img{display: none;}
+  .mobile-menu{ display: block;}
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .first-header, .main-menu, .menu2, #servicios img, #proyectos img{display: none;}
+  .mobile-menu{ display: block;}
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .first-header, .main-menu, .menu2, #servicios img, #proyectos img{display: block;}
+  .mobile-menu{ display: none;}
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .mobile-menu{ display: none;}
+}
